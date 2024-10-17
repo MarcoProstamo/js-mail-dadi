@@ -3,17 +3,18 @@
 // # controlla che sia nella lista di chi può accedere,
 // # stampa un messaggio appropriato sull'esito del controllo.
 
-// const emails = [
-//   "me@email.it",
-//   "other@email.com",
-//   "manz@mail.it",
-//   "gov@email.gov",
-// ];
-// const userEmail = prompt("Inserisci l'Email");
+const emails = [
+  "me@email.it",
+  "other@email.com",
+  "manz@mail.it",
+  "gov@email.gov",
+];
 
-// emails.includes(userEmail)
-//   ? console.log("Email presente nel DataBase")
-//   : console.log("Email non presente nel DataBase");
+const userEmail = prompt("Inserisci l'Email");
+
+emails.includes(userEmail)
+  ? console.log("Email presente nel DataBase")
+  : console.log("Email non presente nel DataBase");
 
 // ! Gioco dei dadi
 // # Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
@@ -21,6 +22,7 @@
 
 const maxRandomNumber = 6;
 const minRandomNumber = 1;
+
 const userRandomNumber = Math.floor(
   Math.random() * maxRandomNumber + minRandomNumber
 );
