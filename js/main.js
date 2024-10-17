@@ -10,7 +10,10 @@ const emails = [
   "gov@email.gov",
 ];
 const userEmail = prompt("Inserisci l'Email");
-let outputTextS;
+
+emails.includes(userEmail)
+  ? console.log("Email presente nel DataBase")
+  : console.log("Email non presente nel DataBase");
 
 // ! Gioco dei dadi
 // # Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
