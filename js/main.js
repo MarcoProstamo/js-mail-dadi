@@ -27,3 +27,11 @@ const userRandomNumber = Math.floor(
 const computerRandomNumber = Math.floor(
   Math.random() * maxRandomNumber + minRandomNumber
 );
+
+console.log(
+  userRandomNumber > computerRandomNumber
+    ? "Il Giocatore ha Vinto!"
+    : userRandomNumber == computerRandomNumber
+    ? "Avete Pareggiato!"
+    : "Il Computer ha Vinto!"
+);
